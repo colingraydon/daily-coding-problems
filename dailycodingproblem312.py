@@ -2,7 +2,7 @@
 #I suspect that there is a solution which uses neither but it would take quite a bit of math to come up with
 
 def function(N):
-    if (n < 0):
+    if (N < 0):
         print("not a valid input")
     if (N < 3):
         return N
@@ -13,10 +13,10 @@ def function(N):
     dp[1][1] = 1
     dp[1][2] = 1
  
-    for i in range(1, N):
-        dp[i+1][0] = (dp[i][0] + dp[i - 1][0] + dp[i - 1][1] + dp[i - 1][2])
-        dp[i+1][1] = (dp[i][0] + dp[i][2])
-        dp[i+1][2] = (dp[i][0] + dp[i][1])
+    for i in range(2, N+1):
+        dp[i][0] = (dp[i-1][0] + dp[i - 2][0] + dp[i - 2][1] + dp[i - 2][2])
+        dp[i][1] = (dp[i-1][0] + dp[i-1][2])
+        dp[i][2] = (dp[i-1][0] + dp[i-1][1])
     return int(dp[N][0])
  
 print(function(4))
