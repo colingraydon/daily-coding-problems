@@ -1,3 +1,15 @@
+# Daily-Coding-Problem-312
+#You are given a 2 x N board, and instructed to completely cover the board with the following shapes:
+
+#Dominoes, or 2 x 1 rectangles.
+#Trominoes, or L-shapes.
+#For example, if N = 4, here is one possible configuration, where A is a domino, and B and C are trominoes.
+
+#A B B C
+#A B C C
+#Given an integer N, determine in how many ways this task is possible.
+
+
 #strict recursion is an awful solution here. it's going to spiral in complexity very quickly. I used dynamic programming instead
 #I suspect that there is a solution which uses neither but it would take quite a bit of math to come up with
 
