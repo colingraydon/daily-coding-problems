@@ -21,4 +21,4 @@ def function(n,m):
             i+=1
         else: 
             j+=1
-    return min
+    return min  
