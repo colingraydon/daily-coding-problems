@@ -36,6 +36,7 @@ class ChessElo:
             k = 40
         else:
             k = 20
+        return k
 
     #for score, 1 represents a p1 victory, .5 is a draw, 0 is a p1 loss
     #this algorithm is the standard one for elo
