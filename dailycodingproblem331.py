@@ -28,13 +28,13 @@ def flip_letters(data):
             x_count += 1
         i -= 1
 
-    # for i in x_right_map:
-    #     print("index is ", i, "x to the right are", x_right_map[i])
+    for i in x_right_map:
+        print("index is ", i, "x to the right are", x_right_map[i])
     
-    # print("Doing y_left_map now")
+    print("Doing y_left_map now")
 
-    # for i in y_left_map:
-    #     print("index is ", i, "y to the left are", y_left_map[i])
+    for i in y_left_map:
+        print("index is ", i, "y to the left are", y_left_map[i])
 
 
     i = 0
