@@ -1,6 +1,6 @@
 #Given an array of numbers and a number k, determine if there are three entries in the array which add up to the specified number k.
 
-#This is trivial in O(n^3), but this solution should solve it in O(n^2)
+#This is trivial in O(n^3), but this solution should solve it in O(n^2) via window sliding
 
 def find_sum(l, sum):
 
