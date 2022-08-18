@@ -27,7 +27,7 @@ public class dailycodingproblem23 {
         else return false;
     }
    
-    public int findShortestPath(boolean[][]array, int startX, int startY, int endX, int endY)
+    public void findShortestPath(boolean[][]array, int startX, int startY, int endX, int endY)
     {
         int M = array[0].length;
         int N = array.length;
@@ -40,7 +40,7 @@ public class dailycodingproblem23 {
                 visited[i][j] = false;
             }
         }
-        Queue<dailycodingproblem23> list = new Queue<dailycodingproblem23>();
+        Queue<dailycodingproblem23> list = new LinkedList<dailycodingproblem23>();
         dailycodingproblem23 firstSpace = new dailycodingproblem23(startX, startY, 0);
         list.offer(firstSpace);
         visited[startY][startX] = true;
@@ -50,7 +50,7 @@ public class dailycodingproblem23 {
             visited[temp.x][temp.y] = true;
             if (temp.x == endX && temp.y == endY)
             {
-                return temp.distance;
+                System.out.println(temp.distance);
             }
             if (isSpaceValid(array, M, N, visited, temp.x + 1, temp.y))
             {
