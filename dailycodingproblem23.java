@@ -31,7 +31,6 @@ public class dailycodingproblem23 {
     {
         int M = array[0].length;
         int N = array.length;
-        int count = 0;
         boolean[][]visited = new boolean[N][M];
         for (int i = 0; i < M; i++)
         {

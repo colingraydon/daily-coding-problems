@@ -51,6 +51,7 @@ root.right.right = BinaryTreeSum(100)
 root.right.left = BinaryTreeSum(20)
 
 temp_list = []
+l = BinaryTreeSum
 l = BinaryTreeSum.tree_sum(root, 4, 15, temp_list)
 print(l)
 
