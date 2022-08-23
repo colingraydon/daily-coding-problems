@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 public class FlightList {
 
     public ArrayList<Flight> list;
