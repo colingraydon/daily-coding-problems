@@ -18,19 +18,19 @@ public class dailycodingproblem390 {
 
         while(q.peek() != null) {
             Integer tempVal = q.poll();
+            Integer prev = tempVal;
             if (!first) {
                 if (tempVal > 1) {
                     for (int i = 1; i < tempVal; i++) {
                         ans.add(i);
                     }
                 }
-                Integer prev = tempVal;
                 first = true;
             }
             else {
                 if (tempVal - prev > 1) {
                     for (int i = prev + 1; i < tempVal; i++) {
-                        ans.add(i)
+                        ans.add(i);
                     }
                 }
                 prev = tempVal;
